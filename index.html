@@ -1,12 +1,219 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>SmartTrial Nepal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #123b68;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #55d6be;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e5f0fa;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #123b68;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .hero button {
+            background-color: #123b68;
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #0b2949;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 30px;
+            color: #123b68;
+            margin-bottom: 35px;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-box {
+            background-color: white;
+            padding: 30px 20px;
+            width: 230px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .service-box h3 {
+            color: #123b68;
+            margin-bottom: 12px;
+        }
+
+        .service-box p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #123b68;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1><center>Hello</center><Hello</h1>
-  
+
+    <!-- Navigation -->
+    <header>
+        <h2>SmartTrial Nepal</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to SmartTrial Nepal</h1>
+
+        <p>
+            A smarter way to manage your driving license
+            trial process. Register online, check schedules
+            and access trial information easily.
+        </p>
+
+        <button onclick="alert('Welcome to SmartTrial Nepal!')">
+            Get Started
+        </button>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-box">
+                <h3>Online Registration</h3>
+                <p>Register for your driving license trial online.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Trial Schedule</h3>
+                <p>View your upcoming driving trial schedule.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Trial Results</h3>
+                <p>Check your driving trial results easily.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Information</h3>
+                <p>Get important driving license information.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SmartTrial Nepal. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
